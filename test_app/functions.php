@@ -10,3 +10,8 @@ function getTodoList()
 {
     return getAllRecords();
 }
+
+function getSelectedTodo($id)
+{
+  return getTodoTextById($id);
+}

@@ -14,7 +14,7 @@ require_once('functions.php');
        <p>新規作成</p>
      </a>
   </div>
-  <div> 
+  <div>
     <table>
       <tr>
         <th>ID</th>
@@ -24,7 +24,7 @@ require_once('functions.php');
       </tr>
       <?php foreach (getTodoList() as $todo): ?>
         <tr>
-          <td><?= $todo['id']; ?></td>
+          <td><a href="edit.php?id=<?= $todo['id']; ?></td>
           <td><?= $todo['content']; ?></td>
           <td>
             <a href="">更新</a>
