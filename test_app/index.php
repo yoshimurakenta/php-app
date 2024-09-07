@@ -1,6 +1,7 @@
 <?php
 require_once('functions.php');
 ?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -24,7 +25,7 @@ require_once('functions.php');
       </tr>
       <?php foreach (getTodoList() as $todo): ?>
         <tr>
-          <td><a href="edit.php?id=<?= $todo['id']; ?></td>
+          <td><?= $todo['id']; ?></td>
           <td><?= $todo['content']; ?></td>
           <td>
             <a href="">更新</a>
